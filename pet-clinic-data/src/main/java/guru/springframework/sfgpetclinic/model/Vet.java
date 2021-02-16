@@ -1,4 +1,10 @@
 package guru.springframework.sfgpetclinic.model;
 
-public class Vet extends Person{
+import lombok.Data;
+
+import java.util.Set;
+
+@Data
+public class Vet extends Person {
+    private Set<Specialty> specialties;
 }
